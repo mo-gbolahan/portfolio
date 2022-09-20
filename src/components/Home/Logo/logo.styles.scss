@@ -27,6 +27,16 @@
 	transform: rotateZ(30deg);
 	width: 110%;
 	z-index: 1;
+	animation: solidIn 1.2s 4s;
+	animation-fill-mode: forwards;
+}
+@keyframes solidIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 .svg-container {
 	stroke: #ffd700;

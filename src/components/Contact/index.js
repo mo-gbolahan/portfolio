@@ -11,6 +11,7 @@ import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 
 import MarkerIcon from "../../assets/images/marker-icon.png";
+import Loader from "react-loaders";
 
 const Contact = () => {
 	const strArr = ["C", "o", "n", "t", "a", "c", "t", "", "m", "e"];
@@ -144,6 +145,7 @@ const Contact = () => {
 						</Marker>
 					</MapContainer>
 				</div>
+				<Loader type="pacman" />
 			</div>
 		</>
 	);
