@@ -17,7 +17,7 @@ import { useState } from "react";
 import { useRef } from "react";
 const Sidebar = () => {
 	const navBarRef = useRef();
-	const [showNavBar, setShowNavBar] = useState(false);
+	const [showNavBar, setShowNavBar] = useState(true);
 
 	return (
 		<>

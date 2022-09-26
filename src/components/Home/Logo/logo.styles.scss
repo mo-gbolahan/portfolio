@@ -11,24 +11,33 @@
 	// opacity: 0;
 }
 .G-outline {
-	width: 110%;
+	width: calc(100vw / 3);
+	top: 20vh;
+	position: absolute;
+	right: calc(16vh - 140px);
+	bottom: auto;
+	left: auto;
 	height: auto;
-	bottom: 0;
+	// bottom: 0;
 	transform: rotateZ(30deg) !important;
 }
 .solid-logo {
 	position: absolute;
-	top: -5px;
-	right: auto;
+	// top: -5px;
+	top: calc(20vh - 4px);
+	right: calc(16vh - 136px);
 	bottom: auto;
-	left: -8px;
+	left: auto;
 	margin: auto;
 	opacity: 0;
 	transform: rotateZ(30deg);
-	width: 110%;
+	width: calc(100vw / 3);
 	z-index: 1;
 	animation: solidIn 1.2s 4s;
 	animation-fill-mode: forwards;
+	@media (max-width: 768px) {
+		// top: 100px;
+	}
 }
 @keyframes solidIn {
 	from {

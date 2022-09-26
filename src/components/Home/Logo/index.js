@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 // import DrawSVGPlugin from "gsap-trial/DrawSVGPlugin";
 // import gsap from "gsap-trial";
 // style
