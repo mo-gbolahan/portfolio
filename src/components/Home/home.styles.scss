@@ -1,10 +1,10 @@
 .home-page {
 	.text-zone {
 		position: absolute;
-		left: 10%;
+		left: 150px;
 		top: 50%;
 		transform: translateY(-50%);
-		width: 40%;
+		width: 46%;
 		max-height: 90%;
 	}
 	h1 {
@@ -13,6 +13,10 @@
 		margin: 0;
 		font-family: "Coolvetica";
 		font-weight: 400;
+		margin-bottom: 60px;
+		@media (max-width: 768px) {
+			font-size: 34px;
+		}
 
 		&::before {
 			content: "<h1>";
@@ -21,8 +25,8 @@
 			color: #ffd700;
 			font-size: 18px;
 			position: absolute;
-			margin-top: -40px;
-			left: 15px;
+			margin-top: -30px;
+			left: -15px;
 			opacity: 0.6;
 		}
 		&::after {
@@ -32,7 +36,9 @@
 			font-size: 18px;
 			position: absolute;
 			margin-top: 18px;
-			margin-left: 20px;
+			// margin-left: 20px;
+			left: -15px;
+			bottom: 120px;
 			opacity: 0.6;
 			animation: fadeIn 1s 1.7s backwards;
 		}

@@ -16,6 +16,9 @@
 	left: 120px;
 	font-size: 22px;
 	font-family: "La Bella Aurore";
+	@media (max-width: 768px) {
+		display: none;
+	}
 }
 .top-tag-html {
 	margin-left: -20px;
