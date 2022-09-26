@@ -16,7 +16,7 @@
 	left: 120px;
 	font-size: 22px;
 	font-family: "La Bella Aurore";
-	@media (max-width: 768px) {
+	@media (max-height: 580px) {
 		display: none;
 	}
 }

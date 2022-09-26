@@ -4,11 +4,14 @@
 	height: 600px;
 	position: absolute;
 	top: 0;
-	right: 8%;
+	right: 20%;
 	bottom: 0;
 	left: auto;
 	margin: auto;
 	// opacity: 0;
+	@media (max-width: 600px) {
+		opacity: 0;
+	}
 }
 .G-outline {
 	width: calc(100vw / 3);
@@ -19,13 +22,28 @@
 	left: auto;
 	height: auto;
 	// bottom: 0;
-	transform: rotateZ(30deg) !important;
+	transform: rotateZ(30deg);
+	transition: transform 3s, width 3s;
 	@media (max-width: 768px) {
-		top: 103px;
 		margin-right: 20px;
+		width: 40%;
+
+		transform: rotateZ(30deg) translateX(25px) translateY(49px);
 	}
 }
 .solid-logo {
+	// position: absolute;
+	// top: -5px;
+	// right: auto;
+	// bottom: auto;
+	// left: -8px;
+	// margin: auto;
+	// opacity: 0;
+	// transform: rotateZ(30deg);
+	// width: 110%;
+	// z-index: 1;
+	// animation: solidIn 1.2s 4s;
+	// animation-fill-mode: forwards;
 	position: absolute;
 	// top: -5px;
 	top: calc(5% - 4px);
@@ -39,9 +57,12 @@
 	z-index: 1;
 	animation: solidIn 1.2s 4s;
 	animation-fill-mode: forwards;
+	transition: transform 3s, width 3s;
+
 	@media (max-width: 768px) {
 		margin-right: 20px;
-		top: 100px;
+		width: 40%;
+		transform: rotateZ(30deg) translateX(30px) translateY(50px);
 	}
 }
 @keyframes solidIn {
