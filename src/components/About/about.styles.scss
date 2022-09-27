@@ -7,11 +7,23 @@
 	position: absolute;
 	right: 0;
 	overflow: hidden;
+	@media all and (max-width: 768px) {
+		padding: 5em;
+		width: 40%;
+		// .cube-spinner {
+		// 	animation: none;
+		// 	// display: none;
+		// }
+	}
 	.cube-spinner {
 		animation: spin-cube ease-in-out infinite 15s;
 		transform-style: preserve-3d;
 		transform-origin: 100px 100px 0;
 		margin-left: calc(50% - 100px);
+		@media all and (max-width: 768px) {
+			// margin-left: calc(50% - 150px);
+			margin-top: 30px;
+		}
 		div {
 			position: absolute;
 			width: 200px;
@@ -25,6 +37,11 @@
 			justify-content: center;
 			align-items: center;
 			box-shadow: 0 0 20px 20px lightyellow;
+			@media all and (max-width: 768px) {
+				width: 100px;
+				height: 100px;
+				font-size: 90px;
+			}
 		}
 		.face1 {
 			transform: translateZ(100px);
@@ -43,6 +60,26 @@
 		}
 		.face6 {
 			transform: rotateX(-90deg) translateZ(100px);
+		}
+		@media (max-width: 768px) {
+			.face1 {
+				transform: translateZ(50px);
+			}
+			.face2 {
+				transform: rotateY(90deg) translateZ(50px);
+			}
+			.face3 {
+				transform: rotateY(90deg) rotateX(90deg) translateZ(50px);
+			}
+			.face4 {
+				transform: rotateY(180deg) rotateZ(90deg) translateZ(50px);
+			}
+			.face5 {
+				transform: rotateY(-90deg) rotateZ(90deg) translateZ(50px);
+			}
+			.face6 {
+				transform: rotateX(-90deg) translateZ(50px);
+			}
 		}
 	}
 	@keyframes spin-cube {
