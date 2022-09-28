@@ -20,6 +20,8 @@ const Home = () => {
 	});
 	const nameArr = ["b", "o", "l", "a", "h", "a", "n"];
 	const jobArr = [
+		// "A",
+		// " ",
 		"w",
 		"e",
 		"b",

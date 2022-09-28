@@ -6,7 +6,7 @@
 		left: 150px;
 		top: 50%;
 		transform: translateY(-50%);
-		width: 46%;
+		width: 60%;
 		max-height: 90%;
 	}
 	h1 {
@@ -17,7 +17,7 @@
 		font-weight: 400;
 		margin-bottom: 60px;
 		@media (max-width: 768px) {
-			font-size: 34px;
+			font-size: 30px;
 		}
 
 		&::before {
