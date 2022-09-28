@@ -1,7 +1,17 @@
 @import "../../Styles/variables";
+.contact-page {
+	.text-zone {
+		@media (max-width: 768px) {
+			left: 110px;
+			transform: translateY(-50%);
+			width: 35%;
+		}
+	}
+}
 .contact-form {
 	width: 100%;
 	margin-top: 3rem;
+
 	ul {
 		margin: 0;
 		padding: 0;
@@ -84,6 +94,17 @@
 
 	color: $textColor;
 	background: #000;
+
+	transition: all 2s;
+	@media (max-width: 1087px) {
+		top: 10%;
+		right: auto;
+		margin-left: 55rem;
+	}
+
+	@media (max-width: 768px) {
+		display: none;
+	}
 	span {
 		font-size: 12px;
 		display: block;
@@ -96,6 +117,14 @@
 	width: 53%;
 	height: 100%;
 	margin-left: auto;
+	transition: all 2s;
+
+	@media (max-width: 1087px) {
+		margin-left: 50rem;
+	}
+	@media (max-width: 768px) {
+		display: none;
+	}
 }
 .leaflet-container {
 	width: 100%;
