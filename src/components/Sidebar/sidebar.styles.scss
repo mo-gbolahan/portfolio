@@ -1,3 +1,5 @@
+@import "../../Styles/variables";
+
 @mixin logo-img {
 	img {
 		display: block;
@@ -14,7 +16,7 @@
 }
 @mixin nav-svg {
 	font-size: 22px;
-	color: #4d4d4e;
+	color: $navbarIconColor;
 	display: block;
 	line-height: 51px;
 	position: relative;
@@ -34,7 +36,7 @@
 	svg {
 		@include nav-svg;
 		font-size: 30px;
-		color: #ffd700;
+		color: $primaryColor;
 		margin-top: -15px;
 		animation-duration: 1s;
 		animation-iteration-count: 1;
@@ -46,7 +48,7 @@
 }
 
 .nav-bar {
-	background: #181818;
+	background: $navbarBackgroundColor;
 	width: 85px;
 	height: 100%;
 	position: absolute;
@@ -63,7 +65,7 @@
 		svg {
 			@include nav-svg;
 			font-size: 30px;
-			color: #ffd700;
+			color: $primaryColor;
 			margin-top: -15px;
 		}
 	}
@@ -81,7 +83,7 @@
 			@include nav-svg;
 
 			&:hover {
-				color: #ffd700;
+				color: $primaryColor;
 				svg {
 					opacity: 0;
 				}
@@ -118,7 +120,7 @@
 			}
 			&.active {
 				svg {
-					color: #ffd700;
+					color: $primaryColor;
 				}
 			}
 		}
@@ -139,7 +141,7 @@
 				font-size: 17px;
 				line-height: 10px;
 				&:hover svg {
-					color: #ffd700;
+					color: $primaryColor;
 				}
 			}
 		}

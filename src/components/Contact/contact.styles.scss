@@ -1,3 +1,4 @@
+@import "../../Styles/variables";
 .contact-form {
 	width: 100%;
 	margin-top: 3rem;
@@ -27,9 +28,9 @@
 				height: 100%;
 				border-radius: 5px;
 				border: 0;
-				background-color: #115173;
+				background-color: $textareaColor;
 				font-size: 16px;
-				color: #fff;
+				color: $textColor;
 				padding: 0 20px;
 				box-sizing: border-box;
 			}
@@ -47,13 +48,13 @@
 				grid-column: auto / -1;
 			}
 			input[type="submit"] {
-				color: #ffd700;
+				color: $primaryColor;
 				background: 0 0;
 				font-size: 14px;
 				letter-spacing: 3px;
 				text-decoration: none;
 				padding: 8px 10px;
-				border: 1px solid #ffd700;
+				border: 1px solid $primaryColor;
 				border-radius: 5px;
 			}
 		}
@@ -81,13 +82,13 @@
 	animation: fadeIn 1s 1.5s;
 	animation-fill-mode: forwards;
 
-	color: #fff;
+	color: $textColor;
 	background: #000;
 	span {
 		font-size: 12px;
 		display: block;
 		padding-top: 20px;
-		color: #ffd700;
+		color: $primaryColor;
 	}
 }
 .map-wrap {

@@ -1,3 +1,5 @@
+@import "../../../Styles/variables";
+
 .logo-container {
 	z-index: 0;
 	width: 400px;
@@ -74,6 +76,6 @@
 	}
 }
 .svg-container {
-	stroke: #ffd700;
+	stroke: $primaryColor;
 	stroke-width: 1px;
 }
