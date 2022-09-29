@@ -37,16 +37,16 @@ const About = () => {
 					</h1>
 					<p>
 						I'm very abmitious Front-end developer looking for a
-						role in an established IT company with the opportunity
-						to work with the latest technologies on challenging and
-						diverse projects.
+						role in an IT company with the opportunity to work with
+						the latest technologies on challenging and diverse
+						projects.
 					</p>
 					<p>
 						Also, I'm savvy about the controls system, specifically
 						related to the power industry.
 					</p>
 					<p>
-						I'm quite confident, naturally curiosu, and perpetually
+						I'm quite confident, naturally curious, and perpetually
 						working on improving my chops one design problem at a
 						time.
 					</p>

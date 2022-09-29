@@ -18,7 +18,7 @@ import { useRef } from "react";
 const Sidebar = () => {
 	const navBarRef = useRef();
 	const [showNavBar, setShowNavBar] = useState(true);
-
+	const navbarIconColor = "#222629";
 	return (
 		<>
 			<div className="toggle-btn btn ">
@@ -29,7 +29,11 @@ const Sidebar = () => {
 					}}
 					onAnimationEnd={(e) => e.target.classList.remove("fa-beat")}
 				>
-					<FontAwesomeIcon icon={faBars} color="#4d4d4e" beat />
+					<FontAwesomeIcon
+						icon={faBars}
+						color={navbarIconColor}
+						beat
+					/>
 				</div>
 				<Link className="logo" to="/">
 					<img src={LogoS} alt="logoG" />
@@ -48,7 +52,10 @@ const Sidebar = () => {
 				>
 					<nav>
 						<NavLink exact="true" activeclassname="active" to="/">
-							<FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+							<FontAwesomeIcon
+								icon={faHome}
+								color={navbarIconColor}
+							/>
 						</NavLink>
 						<NavLink
 							exact="true"
@@ -56,7 +63,10 @@ const Sidebar = () => {
 							className="about-link"
 							to="/about"
 						>
-							<FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+							<FontAwesomeIcon
+								icon={faUser}
+								color={navbarIconColor}
+							/>
 						</NavLink>
 						<NavLink
 							exact="true"
@@ -66,7 +76,7 @@ const Sidebar = () => {
 						>
 							<FontAwesomeIcon
 								icon={faEnvelope}
-								color="#4d4d4e"
+								color={navbarIconColor}
 							/>
 						</NavLink>
 					</nav>
@@ -79,7 +89,7 @@ const Sidebar = () => {
 							>
 								<FontAwesomeIcon
 									icon={faLinkedin}
-									color="#4d4d4e"
+									color={navbarIconColor}
 								/>
 							</a>
 						</li>
@@ -91,7 +101,7 @@ const Sidebar = () => {
 							>
 								<FontAwesomeIcon
 									icon={faGithub}
-									color="#4d4d4e"
+									color={navbarIconColor}
 								/>
 							</a>
 						</li>
