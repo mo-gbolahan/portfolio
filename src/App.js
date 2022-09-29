@@ -9,7 +9,7 @@ import Test from "./components/Test";
 
 function App() {
 	return (
-		<div className="">
+		<>
 			<Routes>
 				<Route path="/" element={<Layout />}>
 					<Route index element={<Home />} />
@@ -18,7 +18,7 @@ function App() {
 					<Route path="test" element={<Test />} />
 				</Route>
 			</Routes>
-		</div>
+		</>
 	);
 }
 

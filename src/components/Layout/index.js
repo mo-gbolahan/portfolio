@@ -7,8 +7,8 @@ import Sidebar from "../Sidebar";
 
 const Layout = () => (
 	<div className="app">
-		<Sidebar />
 		<div className="page">
+			<Sidebar />
 			<span className="tags top-tags">
 				<span className="top-tag-html">&lt;html&gt;</span>
 				<br />
