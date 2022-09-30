@@ -63,7 +63,7 @@ const Contact = () => {
 					</h1>
 					<p>
 						I am interested in Web Development - expecially ambition
-						prokect, However, if you have other requests or
+						project, However, if you have other requests or
 						questions, don't hesitate to contact me using the form
 						below.
 					</p>

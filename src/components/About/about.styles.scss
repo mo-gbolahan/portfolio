@@ -8,8 +8,12 @@
 	right: 0;
 	overflow: hidden;
 	@media all and (max-width: 768px) {
-		padding: 5em;
+		// padding: 5em;
+		padding-left: 100px;
+		padding-bottom: 100px;
+		height: 40%;
 		width: 40%;
+		top: -8em;
 		// .cube-spinner {
 		// 	animation: none;
 		// 	// display: none;
@@ -38,9 +42,9 @@
 			align-items: center;
 			box-shadow: 0 0 20px 20px lightyellow;
 			@media all and (max-width: 768px) {
-				width: 100px;
-				height: 100px;
-				font-size: 90px;
+				width: 70px;
+				height: 70px;
+				font-size: 50px;
 			}
 		}
 		.face1 {
@@ -63,22 +67,22 @@
 		}
 		@media (max-width: 768px) {
 			.face1 {
-				transform: translateZ(50px);
+				transform: translateZ(40px);
 			}
 			.face2 {
-				transform: rotateY(90deg) translateZ(50px);
+				transform: rotateY(90deg) translateZ(40px);
 			}
 			.face3 {
-				transform: rotateY(90deg) rotateX(90deg) translateZ(50px);
+				transform: rotateY(90deg) rotateX(90deg) translateZ(40px);
 			}
 			.face4 {
-				transform: rotateY(180deg) rotateZ(90deg) translateZ(50px);
+				transform: rotateY(180deg) rotateZ(90deg) translateZ(40px);
 			}
 			.face5 {
-				transform: rotateY(-90deg) rotateZ(90deg) translateZ(50px);
+				transform: rotateY(-90deg) rotateZ(90deg) translateZ(40px);
 			}
 			.face6 {
-				transform: rotateX(-90deg) translateZ(50px);
+				transform: rotateX(-90deg) translateZ(40px);
 			}
 		}
 	}
